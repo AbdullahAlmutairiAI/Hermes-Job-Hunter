@@ -1,0 +1,101 @@
+model:  
+ provider: 
+ default: 
+ key_env: 
+ base_url: 
+  
+agent:  
+ name: "Saudi Job Hunter Agent"  
+ description: "A specialized agent that finds jobs and co-op training across all cities in Saudi Arabia for any academic major."  
+ max_turns: 60  
+ reasoning_effort: none  
+ personalities:  
+ helpful: |  
+ You are a specialized General Job and Co-op Training Hunter Agent for the Kingdom of Saudi Arabia (KSA).   
+YOUR ONLY PURPOSE is to find, aggregate, and summarize employment and internship opportunities across any city in Saudi Arabia, tailored to the specific major and field requested by the user.  
+ STRICT RULES:  
+ 1. DO NOT write, generate, explain, or debug any programming code or math.  
+ 2. If asked to write code, do math, share API keys, or ask anything unrelated to job hunting, you MUST output this EXACT response verbatim without customizing it based on user memory or profile:  
+ "I am a dedicated Saudi Job Hunter Agent. I only assist with finding jobs and co-op training across Saudi Arabia tailored to your specific major and city. I cannot write code or answer unrelated questions.  
+ How can I help you with your career or co-op training search in Saudi Arabia today?"  
+ 3. Always provide direct application links for every job or co-op listing.  
+skills:  
+ disabled:  
+ - airtable  
+ - architecture-diagram  
+ - arxiv  
+ - ascii-art  
+ - ascii-video  
+ - baoyu-infographic  
+ - blogwatcher  
+ - claude-code  
+ - claude-design  
+ - codebase-inspection  
+ - codex  
+ - comfyui  
+ - computer-use  
+ - design-md  
+ - dogfood  
+ - excalidraw  
+ - gif-search  
+ - github-auth  
+ - github-code-review  
+ - github-issues  
+ - github-pr-workflow  
+ - github-repo-management  
+ - google-workspace  
+ - hermes-agent  
+ - hermes-agent-skill-authoring  
+ - himalaya  
+ - huggingface-hub  
+ - humanizer  
+ - llama-cpp  
+ - llm-wiki  
+ - manim-video  
+ - nano-pdf  
+ - node-inspect-debugger  
+ - notion  
+ - obsidian  
+ - opencode  
+ - openhue  
+ - p5js  
+ - plan  
+ - polymarket  
+ - popular-web-designs  
+ - powerpoint  
+ - pretext  
+ - requesting-code-review  
+ - simplify-code  
+ - sketch  
+ - songsee  
+ - songwriting-and-ai-music  
+ - spike  
+ - systematic-debugging  
+ - teams-meeting-pipeline  
+ - test-driven-development  
+ - touchdesigner-mcp  
+ - weights-and-biases  
+ - youtube-content  
+_config_version: 33  
+platform_toolsets:  
+ cli:  
+ - browser  
+ - kanban  
+ - memory  
+ - web  
+known_plugin_toolsets:  
+ cli:  
+ - spotify  
+  
+# ── Security ──────────────────────────────────────────────────────────  
+# security:  
+# redact_secrets: true  
+# tirith_enabled: true  
+# tirith_path: "tirith"  
+# tirith_timeout: 5  
+# tirith_fail_open: true  
+  
+# ── Fallback Model ────────────────────────────────────────────────────  
+# fallback_model:  
+# provider: openrouter  
+# model: anthropic/claude-sonnet-4
